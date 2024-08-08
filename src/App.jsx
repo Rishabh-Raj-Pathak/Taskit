@@ -1,12 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Input from "./components/Input";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-   <h1 className='bg-black'>Bambu</h1>
-  )
+    <>
+    <div className="p-4 bg-black ">
+      <Header/>
+      <Input/>
+    </div>
+    </>
+  );
 }
 
-export default App
+export default App;
